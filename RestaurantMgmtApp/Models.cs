@@ -50,6 +50,8 @@ namespace RestaurantMgmtApp.Models
         public long CustomerId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Phone { get; set; } 
+        public string Email { get; set; }
     }
 
     public class Order
@@ -61,6 +63,7 @@ namespace RestaurantMgmtApp.Models
         public DateTime OrderDate { get; set; }
         public string Status { get; set; }
         public decimal TotalAmount { get; set; }
+        public string BranchName { get; set; }
     }
 
     public class OrderItem

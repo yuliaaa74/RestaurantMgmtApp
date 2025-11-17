@@ -1,5 +1,6 @@
 ﻿using RestaurantMgmtApp.Models;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace RestaurantMgmtApp.Data
 {
@@ -9,5 +10,6 @@ namespace RestaurantMgmtApp.Data
         Task UpdateAsync(MenuItem menuItem);
         Task SoftDeleteAsync(long menuItemId);
         Task<MenuItem> GetByIdAsync(long menuItemId);
+        Task<IEnumerable<MenuItem>> SearchAsync(string name = null);
     }
 }
